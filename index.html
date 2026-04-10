@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Scottsdale Golf Hub</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000;
+  }
+
+  .hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 90px 20px 0 20px;
+
+    background: linear-gradient(
+      180deg,
+      #000000 0%, 
+      #050904 10%, 
+      #0b1a0e 20%, 
+      #12311b 30%, 
+      #174227 40%,
+      #1d4d2b 50%, 
+      #239a51 60%,
+      #25a055 70%, 
+      #28b366 85%, 
+      #2BAE66 100%
+    );
+  }
+
+  /* dark overlay for luxury depth */
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(0,0,0,0.85));
+    z-index: 0;
+  }
+
+  /* TITLE */
+  .hero-title {
+    position: relative;
+    font-size: 96px;
+    font-weight: 600;
+    background: linear-gradient(180deg, #F7E7CE, #FBEFC7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 3px;
+    line-height: 1;
+    margin-bottom: 10px;
+    z-index: 1;
+
+    text-shadow:
+      0 2px 0 rgba(0,0,0,0.25),
+      0 4px 0 rgba(0,0,0,0.15),
+      0 8px 0 rgba(0,0,0,0.08);
+  }
+
+  /* SUBTITLE */
+  .hero-sub {
+    position: relative;
+    color: #E6D7B0;
+    font-size: 26px;
+    letter-spacing: 3px;
+    margin-top: 10px;
+    margin-bottom: 70px;
+    z-index: 1;
+    text-transform: uppercase;
+    opacity: 0.95;
+  }
+
+  /* LAUNCH TEXT */
+  .hero-launch {
+    position: relative;
+    z-index: 1;
+    margin-top: 10px;
+  }
+
+  .launch-main {
+  font-size: 22px;
+  letter-spacing: 5px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  background: linear-gradient(90deg, #A86B3D 0%, #C0894F 45%, #D4AF37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  opacity: 0.92;
+}
+
+  /* subtle glow line under launch text */
+  .hero-launch::after {
+    content: '';
+    display: block;
+    width: 180px;
+    height: 1px;
+    margin: 18px auto 0 auto;
+    background: linear-gradient(90deg, transparent, #F7E7CE, transparent);
+    opacity: 0.35;
+  }
+
+  /* MOBILE */
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 78px;
+    }
+
+    .hero-sub {
+      font-size: 20px;
+      margin-bottom: 50px;
+    }
+
+    .launch-main {
+      font-size: 18px;
+      letter-spacing: 3px;
+    }
+  }
+</style>
+
+</head>
+
+<body>
+
+<section class="hero">
+
+  <h1 class="hero-title">Scottsdale Golf Hub</h1>
+
+  <p class="hero-sub">YOUR GUIDE TO SCOTTSDALE GOLF</p>
+
+  <div class="hero-launch">
+    <p class="launch-main">Launching November 2026</p>
+  </div>
+
+</section>
+
+</body>
+</html>
